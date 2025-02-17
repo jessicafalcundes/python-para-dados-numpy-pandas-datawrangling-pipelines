@@ -9,13 +9,16 @@ Os arrays do NumPy são mais poderosos e rápidos que as listas tradicionais do 
 
 Existem diferentes tipos de arrays no NumPy:
 * **Array Unidimensional (1D)**: Como uma lista simples em Python.
-arr = np.array([1, 2, 3, 4, 5])
+
+`arr = np.array([1, 2, 3, 4, 5])`
 
 * **Array Bidimensional (2D)**: Como uma matriz (linha e coluna).
-arr_2d = np.array([[1, 2, 3], [4, 5, 6]])
+
+`arr_2d = np.array([[1, 2, 3], [4, 5, 6]])`
 
 * **Array Multidimensional (ND)**: Arrays com mais de duas dimensões (como tensores em aprendizado de máquina).
-arr_nd = np.array([[[1, 2], [3, 4]], [[5, 6], [7, 8]]])
+
+`arr_nd = np.array([[[1, 2], [3, 4]], [[5, 6], [7, 8]]])`
 
 
 
@@ -23,16 +26,20 @@ arr_nd = np.array([[[1, 2], [3, 4]], [[5, 6], [7, 8]]])
 Os arrays no NumPy possuem alguns atributos importantes:
 
 * **shape**: Retorna a forma (dimensões) do array.
-arr.shape
+
+`arr.shape`
 
 * **ndim**: Retorna o número de dimensões do array.
-arr.ndim
+
+`arr.ndim`
 
 * **size**: Retorna o número total de elementos no array.
-arr.size
+
+`arr.size`
 
 * **dtype**: Retorna o tipo de dados do array (ex: int64, float32).
-arr.dtype
+
+`arr.dtype`
 
 
 
@@ -40,30 +47,42 @@ arr.dtype
 O NumPy permite realizar operações matemáticas em arrays de maneira eficiente. Essas operações podem ser feitas elemento por elemento ou em toda a estrutura do array de forma vetorizada (sem usar loops explicitos, o que torna o código mais rápido).
 
 * **Soma e subtração**
+
+```
 arr1 = np.array([1, 2, 3])
 arr2 = np.array([4, 5, 6])
 print(arr1 + arr2)  # Soma elemento por elemento
 print(arr1 - arr2)  # Subtração
-
+```
 
 * **Multiplicação por um escalar**
+
+```
 arr = np.array([1, 2, 3])
 print(arr * 2)  # Multiplicação de todos os elementos por 2
+```
 
 * **Multiplicação entre arrays (produto ponto a ponto)**
-print(arr1 * arr2)
+
+`print(arr1 * arr2)`
 
 
 4. #### **Indexação e Slicing**
 NumPy permite acessar os elementos de um array com uma sintaxe semelhante à de listas em Python, mas com recursos adicionais para trabalhar com arrays multidimensionais.
 
 * **Acessar um único elemento**
+
+```
 arr_2d = np.array([[1, 2, 3], [4, 5, 6]])
 print(arr_2d[0, 2])  # Acessa o elemento na linha 0, coluna 2
+```
 
 * **Slicing (fatiamento) Você pode pegar um pedaço do array:**
+
+```
 print(arr_2d[0, :])  # Acessa todos os elementos da primeira linha
 print(arr_2d[:, 1])  # Acessa todos os elementos da segunda coluna
+```
 
 
 
@@ -72,20 +91,25 @@ NumPy também oferece uma série de funções para realizar operações matemát
 
 * **Funções Matemáticas**
     * **Soma dos elementos:**
-    print(np.sum(arr))  # Soma todos os elementos do array
+    
+    `print(np.sum(arr))  # Soma todos os elementos do array`
 
     * **Média:**
-    print(np.mean(arr))  # Média dos elementos
+    
+    `print(np.mean(arr))  # Média dos elementos`
 
     * **Desvio Padrão:**
-    print(np.std(arr))  # Desvio padrão
+    
+    `print(np.std(arr))  # Desvio padrão`
 
 * **Funções de Manipulação**
     * **Transposição de Matrizes:**
-    arr_2d.T  # Transpõe a matriz
+    
+    `arr_2d.T  # Transpõe a matriz`
 
     * **Redimensionamento de Arrays:**
-    arr_2d.reshape(3, 2)  # Altera a forma para 3 linhas e 2 colunas
+    
+    `arr_2d.reshape(3, 2)  # Altera a forma para 3 linhas e 2 colunas`
 
 
 #### **Por que Usar o NumPy?**

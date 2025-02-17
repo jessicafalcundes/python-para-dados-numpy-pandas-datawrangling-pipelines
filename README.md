@@ -2,6 +2,8 @@
 
 ### Conceitos Principais do NumPy
 
+O NumPy (Numerical Python) é uma biblioteca essencial no Python para computação científica e análise de dados. Ele fornece suporte para arrays multidimensionais, o que facilita a manipulação de grandes volumes de dados de forma rápida e eficiente, além de uma série de funções matemáticas e estatísticas que operam sobre esses dados.
+
 1. #### **Arrays**
 Um array é uma estrutura de dados que armazena elementos (dados) de um mesmo tipo (por exemplo, inteiros ou floats) em uma estrutura matricial. Em outras palavras, é uma sequência de elementos organizados de maneira eficiente.
 

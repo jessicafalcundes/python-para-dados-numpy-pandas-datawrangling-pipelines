@@ -1,4 +1,4 @@
-### **NumPy
+### **NumPy**
 O Numpy é uma biblioteca essencial para computação científica e manipulação de dados em Python. Ele oferece uma estrutura de dados chamada `array`, que é mais eficiente do que listas tradicionais em Python, principalmente para grandes volumes de dados.
 
 1. ##### **Instalando o Numpy**

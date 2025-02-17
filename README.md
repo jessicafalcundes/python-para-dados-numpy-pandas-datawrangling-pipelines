@@ -1,4 +1,4 @@
-## semana 5 e 6: python para dados - **numpy, pandas, data wrangling, e pipelines**
+## Python para dados - **Numpy, Pandas, Data Wrangling, e Pipelines**
 
 ### Conceitos Principais do NumPy
 

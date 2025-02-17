@@ -72,3 +72,12 @@ print(arr + arr2)
 print(arr * 2)
 ```
 
+#### **Anotações - aula 2**
+##### **Por que usar numpy e não listas?**
+* Arrays NumPy aceita que todos os elementos sejam de diferentes tipo de dados, contudo o array sempre terá apenas um tipo de dados *. Contudo a normal dentro da análise de dados que usamos **apenas um tipo de dados dentro de um array**.
+* Um único tipo de dados também resulta em arrays NumPy ocupando **menos espaço na memória** em comparação com listas.
+* Quando precisamos de uma **estrutura multidimensional** para armazenar os dados, optamos por arrays em vez de listas, pois as listas podem ser unidimensionais apenas.
+* Se precisarmos de um comprimento fixo e alocação estática, usamos arrays em vez de listas.
+* Quando é necessária uma processamento de dados mais rápido, preferimos arrays em vez de listas.
+* Tipos de dados primitivos podem ser armazenados diretamente em arrays mas nao em listas.
+

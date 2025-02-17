@@ -14,7 +14,7 @@ a coluna ‘Categoria BMI’ está em parte em inglês, substitua para ‘Catego
 import pandas as pd
 
 # Carregando o arquivo CSV
-df = pd.read_csv('C:/Users/jessi/Documents/python-para-dados-numpy/desafio-individual/saude_do_sono_estilo_vida.csv')
+df = pd.read_csv('desafio-individual/saude_do_sono_estilo_vida.csv')
 
 # Alterando o nome das colunas
 df.rename(columns={

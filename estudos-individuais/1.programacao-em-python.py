@@ -518,57 +518,96 @@ split()
 '''
 
 # Imprimindo uma string.
-String = 'Olá Mundão!'
-print( String )
+# String = 'Olá Mundão!'
+'''print( String )'''
 
 # Tipo de uma string.
-print( type( String ) )
+'''print( type( String ) )'''
 
 # Tamanho de uma string.
-print( len( String ) )
+'''print( len( String ) )'''
 
 # Concatenação
-print( String + ' Estou aprendendo Python...' )
+'''print( String + ' Estou aprendendo Python...' )'''
 
 # Substitui uma substring por alguma outra coisa.
-Substituir = String.replace('Mundão', 'Mundo Louco :X')
-print( Substituir )
+'''Substituir = String.replace('Mundão', 'Mundo Louco :X')
+print( Substituir )'''
 
 # A string s começa com "Olá"?
-print( String.startswith('Olá') )
+'''print( String.startswith('Olá') )'''
 
 # A string termina com "mundo"?
-print( String.endswith('mundo') )
+'''print( String.endswith('mundo') )'''
 
 # Quantas ocorrências da palavra "a" a string possui?
-print( String.count('M') )
+'''print( String.count('M') )'''
 
 # Capitalize - Transformar a primeira letra da primeira palavra em maiúscula.
-String_02 = 'odemir depieri'
-print( String_02.capitalize() )
+'''String_02 = 'odemir depieri'
+print( String_02.capitalize() )'''
 
 # Verificar se uma string só possui números.
-String_03 = '123456789'
+'''String_03 = '123456789'
 String_04 = '123456789ABC'
 print( String_03.isdigit() )
-print( String_04.isdigit() )
+print( String_04.isdigit() )'''
 
 # Verificar se uma string é alfanumérica (só possui letras e números).
-print( '12345abc'.isalnum() )
+'''print( '12345abc'.isalnum() )'''
 
 # Transformar tudo em Maiusculo
-print( String.upper() )
+'''print( String.upper() )'''
 
 # Transformar tudo em Minúsculo
-print( String.lower() )
+'''print( String.lower() )'''
 
 # Procurar algo na string
-print( String.find('!') )
+'''print( String.find('!') )'''
 
 # Removendo espaçoes antes e fim da palavra
-String_05 =' Olá Mundão! '
-print( String_05.strip() )
+'''String_05 =' Olá Mundão! '
+print( String_05.strip() )'''
 
 # Removendo espaçoes antes e fim da palavra
-String_06 ='Loja 1 vendou 10, Loja 2 vendou 20, Loja 3 vendou 30 '
-print( String_06.split(',') )
+'''String_06 ='Loja 1 vendou 10, Loja 2 vendou 20, Loja 3 vendou 30 '
+print( String_06.split(',') )'''
+
+
+
+
+# comando input - é usado para receber dados digitados pelo usuário no terminal. 
+# ele sempre retorna uma string (texto), então, se precisar de outro tipo de dado, como um número, é necessário converter.
+
+'''nome = input("digite seu nome: ")
+print("olá, " + nome + "!")'''
+
+
+# o texto dentro do input("...") aparece como uma mensagem para o usuário.
+# tudo que for digitado será armazenado na variável nome.
+
+
+# convertendo o input para números:
+# como input() sempre retorna uma string, para trabalhar com números, use int() ou float():
+
+'''idade = int(input("digite sua idade: "))  # converte para número inteiro
+altura = float(input("digite sua altura: "))  # converte para número decimal
+
+print("daqui a 10 anos, você terá", idade + 10, "anos.")'''
+
+# exemplo com cálculos:
+
+'''num1 = float(input("digite o primeiro número: "))
+num2 = float(input("digite o segundo número: "))
+
+soma = num1 + num2
+print("a soma dos números é:", soma)'''
+
+# Comando input
+# Enviar uma informação momentânea
+
+'''Nome = input('Qual seu nome? ')
+Idade = input('Quantos anos você tem? ')
+print('Seu nome é:', Nome)
+print('Sua idade:', Idade)'''
+

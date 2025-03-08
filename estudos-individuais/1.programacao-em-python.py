@@ -611,3 +611,249 @@ Idade = input('Quantos anos você tem? ')
 print('Seu nome é:', Nome)
 print('Sua idade:', Idade)'''
 
+
+# operadores de comparação
+# são usados para comparar valores e retornam um valor booleano (True ou False). 
+# eles são muito usados em estruturas condicionais (if, while, etc.)
+
+# lista de operadores de comparação:
+
+# == : igual a
+# ex. 10 == 10	- True
+
+# != : diferente de	10 
+# ex. != 5 - True
+
+# > : maior que
+# ex. 10 > 5 - True
+
+# <	: menor que
+# ex. 10 < 5 - False
+
+# >= : maior ou igual a	
+# ex. 10 >= 10 - True
+
+# <= : menor ou igual a	
+# ex. 10 <= 9 - False
+
+# exemplos práticos:
+
+'''a = 10
+b = 5
+
+print(a == b)   # False (10 não é igual a 5)
+print(a != b)   # True  (10 é diferente de 5)
+print(a > b)    # True  (10 é maior que 5)
+print(a < b)    # False (10 não é menor que 5)
+print(a >= 10)  # True  (10 é maior ou igual a 10)
+print(a <= 9) '''  # False (10 não é menor ou igual a 9)
+
+
+# usando operadores em condicionais:
+
+'''idade = int(input("digite sua idade: "))
+
+if idade >= 18:
+    print("você é maior de idade.")
+else:
+    print("você é menor de idade.")'''
+
+
+# operadores lógicos
+# são usados para combinar expressões booleanas (True ou False). 
+# eles são muito utilizados em estruturas condicionais (if, while, etc.)
+
+# lista de operadores lógicos:
+
+# and : verdadeiro se ambas as condições forem verdadeiras
+# (10 > 5) and (8 < 12) - True
+
+# or : verdadeiro se pelo menos uma condição for verdadeira
+# (10 > 5) or (8 > 12) - True
+
+# not - inverte o valor booleano
+# not (10 > 5) - False
+
+# exemplos
+'''a = 10
+b = 5
+c = 8
+
+print((a > b) and (c < a))  # True  (10 > 5 e 8 < 10)
+print((a > b) or (c > a))   # True  (pelo menos uma condição é verdadeira)
+print(not (a > b)) '''         # False (inverte o resultado de True)
+
+
+# usando operadores lógicos em condicionais:
+'''idade = int(input("digite sua idade: "))
+tem_carteira = input("você tem carteira de motorista? (s/n) ") == "s"
+
+if idade >= 18 and tem_carteira:
+    print("você pode dirigir!")
+else:
+    print("você não pode dirigir.")'''
+
+
+# exemplo com or
+'''usuario = input("digite seu usuário: ")
+senha = input("digite sua senha: ")
+
+if usuario == "admin" or senha == "1234":
+    print("acesso permitido.")
+else:
+    print("acesso negado.")'''
+
+
+
+# operadores de identidade
+# são usados para verificar se dois objetos ocupam o mesmo espaço na memória. 
+# eles são is e is not.
+
+# is : verdadeiro se os objetos forem o mesmo na memória
+# a is b - true or false
+
+# is not : verdadeiro se os objetos forem diferentes na memória
+# a is not b - true or false
+
+#  diferença entre is e ==:
+# is verifica se as variáveis apontam para o mesmo objeto na memória.
+# == verifica se os valores são iguais, independentemente da memória.
+
+# exemplos
+'''a = [1, 2, 3]
+b = a  # b aponta para o mesmo local na memória que a
+c = [1, 2, 3]  # c tem os mesmos valores, mas é outro objeto
+
+print(a is b)    # True  (mesmo objeto)
+print(a is c)    # False (objetos diferentes, apesar dos valores serem iguais)
+print(b == c)'''    # True  (valores são iguais)
+
+# usando is not
+'''x = 10
+y = 10
+z = 20
+
+print(x is not y)  # False (x e y são o mesmo objeto na memória)
+print(x is not z)'''  # True  (x e z são objetos diferentes)
+
+# quando usar is
+# para comparar objetos mutáveis, como listas e dicionários.
+# para verificar se uma variável é None (boa prática em python):
+
+'''valor = None
+
+if valor is None:
+    print("a variável não tem valor definido.")'''
+
+
+
+# operadores de associação
+# são usados para verificar se um valor está presente em uma sequência, como listas, tuplas, strings ou dicionários.
+
+# lista de operadores de associação
+# in : verdadeiro se o valor estiver presente na sequência
+# "a" in "python" - false
+
+# not in : verdadeiro se o valor não estiver presente na sequência
+# "z" not in "python" - true
+
+# exemplos
+# verificando em uma string:
+'''frase = "aprendendo python"
+print("python" in frase)   # True (a palavra "python" está na string)
+print("java" not in frase)''' # True ("java" não está na string)
+
+# verificando em listas
+'''numeros = [1, 2, 3, 4, 5]
+
+print(3 in numeros)    # True (3 está na lista)
+print(10 not in numeros)''' # True (10 não está na lista)
+
+
+# verificando em dicionários (chaves)
+'''dados = {"nome": "ana", "idade": 25}
+
+print("nome" in dados)    # True (a chave "nome" existe no dicionário)
+print("endereco" not in dados) ''' # True (a chave "endereco" não existe)
+
+
+# exemplo
+'''senha = input("digite sua senha: ")
+
+if "123" in senha:
+    print("senha fraca! tente outra.")
+else:
+    print("senha segura!")'''
+
+
+# manipulando listas
+# são usadas para armazenar vários itens em uma única variável.
+# As listas são um dos 4 tipos de dados internos do Python usados ​​para armazenar coleções de dados, os outros 3 são Tuple , Set e Dictionary , todos com qualidades e usos diferentes
+
+# append() - Para adicionar um item ao final da lista
+'''lista = [1, 2, 3]
+lista.append(4)
+print(lista)  # [1, 2, 3, 4]'''
+
+# len() - Calcular o tamanho da lista - Retorna o número de elementos na lista.
+'''lista = [1, 2, 3, 4]
+print(len(lista))'''  # 4
+
+# [  ] - Acessar posições - Você pode acessar um item da lista especificando seu índice. 
+# Lembre-se de que os índices começam em 0.
+'''lista = [1, 2, 3, 4]
+print(lista[2])'''  # 3 (índice 2 é o terceiro elemento)
+
+# del() - Exlcuir um elemento
+'''lista = [1, 2, 3, 4]
+del lista[1]  # Remove o elemento no índice 1 (valor 2)
+print(lista)'''  # [1, 3, 4]
+
+# clear() - Limpar a lista
+'''lista = [1, 2, 3, 4]
+lista.clear()
+print(lista)'''  # []
+
+# insert() - Insere um item em uma posição específica, movendo os outros elementos para frente.
+'''lista = [1, 3, 4]
+lista.insert(1, 2)  # Insere o número 2 no índice 1
+print(lista)'''  # [1, 2, 3, 4]
+
+# extend() - Adiciona os itens de uma outra lista à lista atual.
+'''lista1 = [1, 2, 3]
+lista2 = [4, 5, 6]
+lista1.extend(lista2)  # Anexa os elementos de lista2 a lista1
+print(lista1)'''  # [1, 2, 3, 4, 5, 6]
+
+# remove() - Remove a primeira ocorrência de um item na lista.
+'''lista = [1, 2, 3, 2, 4]
+lista.remove(2)  # Remove o primeiro 2
+print(lista)''' # [1, 3, 2, 4]
+
+# pop() - Remove e retorna o item da lista na posição especificada. 
+# Se nenhum índice for fornecido, ele remove e retorna o último item da lista.
+'''lista = [1, 2, 3, 4]
+item_removido = lista.pop(2)  # Remove o item no índice 2 (valor 3)
+print(lista)  # [1, 2, 4]
+print(item_removido)'''  # 3
+
+# sort() - Ordena a lista em ordem crescente (padrão) ou decrescente (se especificado).
+'''lista = [4, 2, 3, 1]
+lista.sort()  # Ordena em ordem crescente
+print(lista)  # [1, 2, 3, 4]
+
+lista.sort(reverse=True)  # Ordena em ordem decrescente
+print(lista)'''  # [4, 3, 2, 1]
+
+# copy() - Faz uma copia da Lista
+'''lista = [1, 2, 3]
+nova_lista = lista.copy()
+print(nova_lista)'''  # [1, 2, 3]
+
+
+# index() - Retorna o índice da primeira ocorrência de um valor na lista. 
+# Se o item não for encontrado, um erro ValueError será gerado.
+'''lista = [1, 2, 3, 4]
+indice = lista.index(3)  # Retorna o índice da primeira ocorrência do número 3
+print(indice)'''  # 2
+
